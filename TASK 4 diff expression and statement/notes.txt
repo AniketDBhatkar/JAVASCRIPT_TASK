@@ -1,0 +1,29 @@
+//Expression
+
+Definition: An expression is anything that produces a value when evaluated.
+
+It can be simple or complex.
+
+Example in JavaScript:
+
+js
+Copy code
+5 + 3         // produces 8
+"Hello"       // produces the string "Hello"
+a * 2         // produces some value depending on a
+
+
+//Statements
+
+Definition: A statement is a complete instruction that performs an action.
+
+Statements can contain expressions, but they are executed for their effect, not just to produce a value.
+
+Example in JavaScript:
+
+js
+Copy code
+let x = 5;      // variable declaration statement
+if (x > 0) {    // if statement
+    console.log("Positive"); // expression inside statement
+}

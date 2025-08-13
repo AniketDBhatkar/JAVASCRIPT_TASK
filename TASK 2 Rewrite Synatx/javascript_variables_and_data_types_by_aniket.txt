@@ -1,0 +1,100 @@
+
+1. Variable Declaration Syntax
+--------------------------------
+Syntax:
+scope variable_name = value;
+
+- Scope:
+  - var → function/global scope (older, not recommended)
+  - let → block scope (preferred)
+  - const → block scope, constant (cannot be reassigned)
+
+
+2. var vs let vs const
+------------------------
+| Keyword | Scope       | Redeclaration | Reassignment | Use Case                           |
+|---------|-------------|---------------|--------------|------------------------------------|
+| var     | Function/global | Yes       | Yes          | Not recommended for modern use     |
+| let     | Block       | No            | Yes          | For values that may change         |
+| const   | Block       | No            | No           | For constant/fixed values or objects
+
+Example:
+--------
+let number = 123;
+
+let age;
+const yearOfBirth = 2000;
+
+let balance = 1000;
+balance = balance + 1000; // allowed with let
+
+const account = {
+  name: "Aniket Bhatkar",
+  phone:8380060245,
+  address: "Nagpur",
+  student: true
+};
+
+account.phone = 8237895726; // modifying property is allowed
+
+// This will throw an error:
+account = {
+  name: "Aniket",
+  phone: 8237895726,
+  address: "Nagpur"
+};
+
+
+3. Variable Naming Rules
+--------------------------
+1. Must be unique within the same scope
+2. Can include letters, digits, and underscores `_`
+3. Cannot start with a number
+4. No spaces or special characters like !@#$%... (except `_`)
+
+Examples:
+- Valid: box1234, box_123
+- Invalid: 123box, box@name, box name
+
+
+4. Data Types
+---------------
+
+Primitive Data Types:
+---------------------
+- Number: integer, float, double
+- String: "Aniket123"
+- Boolean: true, false
+- NaN: Not a Number (e.g. "abc123" / 2)
+- Undefined: declared but not assigned
+- Null: intentional absence of value
+
+Example:
+let age = 66;
+let name = "Aniket";
+let student = false;
+let result = "abc" / 2; // NaN
+
+
+Non-Primitive Data Types:
+--------------------------
+- Array: collection of elements
+  let ages = [22, 23, 24];
+
+- Object: key-value pairs
+  let person = {
+    name: "Aniket",
+    age: 22
+  };
+
+- Function/Method/Module
+
+
+5. Common Mistakes
+--------------------
+- Redeclaring a variable with let or const in the same scope:
+  let age_1 = 22;
+  let age_1 = 50; // Syntax Error
+
+- Using undeclared types like in Java or C++:
+  int number = 10000000000000; // JavaScript does not use 'int'

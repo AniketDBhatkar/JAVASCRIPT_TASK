@@ -1,0 +1,34 @@
+1995 – JavaScript was created by Brendan Eich while working at Netscape Communications.
+
+It was originally developed in just 10 days and was initially called Mocha, later renamed to LiveScript, and finally JavaScript.
+
+JavaScript was designed to run in the browser and make web pages interactive.
+
+Netscape Navigator 2.0 was the first browser to support JavaScript.
+
+Despite the name, JavaScript is not related to Java — the name was chosen for marketing reasons due to Java's popularity at the time.
+
+In the late 1990s, Microsoft created JScript, their own version of JavaScript, for Internet Explorer.
+
+1997 – JavaScript was submitted to ECMA International for standardization.
+
+The standardized version of JavaScript is called ECMAScript.
+
+ECMAScript 1 was released in 1997.
+
+Over the years, multiple versions were released to improve language features:
+
+ES3 (1999) – Widely adopted and used.
+
+ES5 (2009) – Added strict mode, JSON support, and more.
+
+ES6 / ECMAScript 2015 – Major update with let, const, arrow functions, classes, modules, promises, etc.
+
+ES16 -latest version of ECMAScript
+
+JavaScript is now supported in all major browsers and is a core technology of the web, alongside HTML and CSS.
+
+It is used for frontend, backend (Node.js), mobile, desktop apps, and even IoT.
+
+Today, JavaScript is one of the most popular programming languages in the world.
+
