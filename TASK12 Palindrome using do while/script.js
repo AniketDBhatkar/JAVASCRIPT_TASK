@@ -1,6 +1,6 @@
 
 
-let num = 121; // change this number to test
+let num = Number*(prompt("Enter a Number"))
 let temp = num;
 let reverse = 0;
 

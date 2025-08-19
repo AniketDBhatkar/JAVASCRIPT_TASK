@@ -1,0 +1,48 @@
+Lesson: Regex Literals in JavaScript
+1. What is Regex?
+
+Regex (Regular Expression) is a pattern that helps us search, match, or validate text.
+In JavaScript, regex literals are written between slashes:
+
+let regex = /pattern/;
+
+2. Simple Examples
+(a) Match digits only
+let regex = /^[0-9]+$/;   // only numbers
+console.log(regex.test("12345")); // true
+console.log(regex.test("abc123")); // false
+
+(b) Match lowercase letters
+let regex = /^[a-z]+$/;   // only lowercase letters
+console.log(regex.test("hello")); // true
+console.log(regex.test("Hello")); // false
+
+(c) Match uppercase letters
+let regex = /^[A-Z]+$/;   // only uppercase letters
+console.log(regex.test("HELLO")); // true
+console.log(regex.test("Hello")); // false
+
+(d) Match letters and numbers
+let regex = /^[a-zA-Z0-9]+$/; // letters + digits
+console.log(regex.test("Hello123")); // true
+console.log(regex.test("Hello@123")); // false (special character not allowed)
+
+3. Useful Regex Symbols
+Symbol	Meaning	Example
+^	Start of string	/^H/ matches "Hello"
+$	End of string	/o$/ matches "Hello"
+.	Any character	/h.t/ matches "hat", "hit"
+[ ]	Character set	/[abc]/ matches "a", "b", "c"
++	One or more	/[0-9]+/ matches "123"
+*	Zero or more	/a*/ matches "", "a", "aaa"
+?	Optional	/colou?r/ matches "color" and "colour"
+{n,m}	Repeat between n and m times	/[0-9]{2,4}/ matches "12", "1234"
+4. Password Example with Regex Literal
+let password_check = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{12,}$/;
+
+console.log(password_check.test("HelloWorld@123")); // true
+console.log(password_check.test("hello123"));       // false
+
+
+✅ So regex literals in JS are just patterns between /.../.
+✅ We use .test(string) to check if text match
