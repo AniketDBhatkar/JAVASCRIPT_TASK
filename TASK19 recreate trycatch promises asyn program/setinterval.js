@@ -24,3 +24,5 @@
 // // console.log(8)
 
 // // // setTimeout(()=>{clearInterval(timeCalc)},[10000]);
+
+// ====================
